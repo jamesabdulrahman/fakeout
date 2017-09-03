@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'/>
+<title>Fakeout</title>
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Baumans">
+<style>
+body {
+	margin: 16pt auto;
+	width: 65%;
+	text-align: center;
+}
+
+div#tv {
+}
+
+p#status {
+	background-color: black;
+	color: white;
+	margin: 0px auto;
+	padding-top: 6pt;
+	padding-bottom: 0px;
+	width: 640px;
+	font-family: Baumans;
+	font-size: 12pt;
+}
+
+canvas#game_screen {
+	/* position: absolute; */
+	background-color: black;
+	top: 25pt;
+	padding: 0px auto;
+	margin: 0px;
+}
+table {
+	margin: auto;
+	text-align: center;
+}
+
+span#scoreboard {
+	margin: auto;
+	text-align: left;
+}
+</style>
+</head>
+<body>
+<audio id='blip' preload='auto'>
+	<source src='blip.ogg'/>
+</audio>
+<audio id='win' preload='auto'>
+	<source src='win.ogg'/>
+</audio>
+<div id='tv'>
+<p id='status'>SCORE <span id='scoreboard'></span> RANK <span id='level'></span>  LIFE <span id='lives'></span></p>
+<canvas id='game_screen' width='640' height='480'>Your browser seems to be old and crummy. You need one that supports HTML 5.</canvas>
+</div>
+
+<div class='instructions'>
+<section>
+<p>This is Fakeout, which for legal reasons, is nothing like a certain game that is a trademark of Atari SA.</p>
+<script src='constants.js'></script>
+<script src='fakeout.js'></script>
+<h2>Controls</h2>
+<table>
+	<tr>
+		<th>Start Game</th>
+		<td colspan='2'>Enter</td>
+	</tr>
+		<th>Serve</th>
+		<td colspan='2'>Space</td>
+	</tr>
+</table>
+</section>
+</div>
+</body>
+</html>
